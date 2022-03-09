@@ -1,87 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Bootstrap Table</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+<html lang="en-us">
 
-  <body>
-    <div class="container">
-      <nav class="navbar">
-        <ul>
-          <li>
-            <a href="index.html">Latitude</a>
+<head>
+
+    <!-- Required meta tags -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+  <title>Latitude Plots</title>
+</head>
+
+<body style="background-color: lightgray;">
+
+ <!--Start of NavBar script-->
+ <body style="background-color: lightgray">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
+    <div class="container-fluid">
+      <a class="navbar-brand bg-info p-2 rounded text-white fw-bold" href="#"
+        >Latitude</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle active"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Plots
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="./Visualizations/temperature.html"
+                  >Max Temperature</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./Visualizations/Humidity.html"
+                  >Humidity</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="cloudiness.html"
+                  >Cloudiness</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="wind.html"
+                  >Wind Speed</a
+                >
+              </li>
+            </ul>
           </li>
-          <li>
-            <a href="#">Plots</a>
-            <select id="plot-select" onchange="location = this.value;">
-              <option value="#">Select</option>
-              <option value="fig1.html">Fig1</option>
-              <option value="fig2.html">Fig2</option>
-              <option value="fig3.html">Fig3</option>
-              <option value="fig4.html">Fig4</option>
-            </select>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="comparison.html"
+              >Comparison</a
+            >
           </li>
-          <li>
-            <a href="comparison.html">Comparison</a>
-          </li>
-          <li>
-            <a href="data.html">Data</a>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="data.html"
+              >Data</a
+            >
           </li>
         </ul>
-        <div class="clearfix"></div>
-      </nav>
-      <div class="container">
-        <div>
-          <br />
-          <h3>Comparison: Latitude vs X</h3>
-          <br />
-          <hr />
-          <p>All four graphs represented side by side via bootstrap.</p>
-          <br />
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="thumbnail">
-              <div class="caption">
-                <h3>vs Max Temperature</h3>
-              </div>
-              <img src="images/Fig1.png" alt="..." />
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="thumbnail">
-              <div class="caption">
-                <h3>vs Humidity</h3>
-              </div>
-              <img src="images/Fig2.png" alt="..." />
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="thumbnail">
-              <div class="caption">
-                <h3>vs Cloudiness</h3>
-              </div>
-              <img src="images/Fig3.png" alt="..." />
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="thumbnail">
-              <div class="caption">
-                <h3>vs Wind Speed</h3>
-              </div>
-              <img src="images/Fig4.png" alt="..." />
-            </div>
-          </div>
-        </div>
       </div>
     </div>
-  </body>
+  </nav>
+  <!--End of NavBar script-->
+
+    <br>
+    <br>
+
+    <div class="container" style="background-color: white;">
+
+        <h2 style="color: darkcyan;">Comparison: Latitude vs X</h2>
+
+        <hr>
+        <p> Click any plot to get an in-depth analysis</p>
+
+        <div class="row">
+            <div class="col-md-6 col-sm-3">
+                <h5 style="text-align: center; color:darkcyan"> vs. Max Temperature </h5>
+                <a href="temperature.html">
+                    <img src="Fig1.png" height="500" width="500">
+                </a>
+            </div>
+            <div class="col-md-6 col-sm-3">
+                <h5 style="text-align: center; color:darkcyan">  vs. Humidity </h5>
+                <a href="Humidity.html">
+                    <img src="Fig2.png" height="500" width="500">
+                </a>
+            </div>
+
+            <div class="w-100 d-none d-md-block"></div>
+
+            <div class="col-md-6 col-sm-3">
+                <h5 style="text-align: center; color:darkcyan">  vs. Cloudiness </h5>
+                <a href="cloudiness.html">
+                    <img src="Fig3.png" alt="maxtemp" height="500" width="500">
+                </a>    
+                </div>
+            <div class="col-md-6 col-sm-3">
+                <h5 style="text-align: center; color:darkcyan">  vs. Wind Speed </h5>
+                <a href="wind.html">
+                    <img src="Fig4.png" alt="maxtemp" height="500" width="500">
+                </a>
+            </div>
+        </div>
+    </div>  
+   
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>   
+   
+</body>
 </html>

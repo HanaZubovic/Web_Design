@@ -8,7 +8,8 @@
       rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
-    />
+    rel="stylesheet" href="style.css">  
+  
     <!--Metatags-->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -96,31 +97,28 @@
     </nav>
     <!--End of NavBar script-->
    
-    <!--Start of Sgitummary of Latitude container-->
-    <div class="container-fluid">
-      <div class="row justify-content-around py-5 px-4">
-        <div class="col-lg-6 bg-white">
+    <!--Start of Summary of Latitude container-->
+    <div class="container" style="background-color: white; width: 70%; padding-left:40px">
+      <div class="row justify-content-md-center">
+        <div class="col" style="text-align: center;">
           <h2 class="text-info pt-6 ">Summary: Latitude vs. X</h2>
           <hr />
           <img
-            class="w-25 float-start"
-            src="./Resources/assets/images/Fig1.png"
+            class="w-20 float-start"
+            src="Fig1.png"
             alt=""
             srcset=""
           />
           
-          <p  style="line-height:2">
-            <span style="font-size:12pt">The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities. 
+          <p style="line-height:2;font-size:125%;">
+            <span style= >The aim of the project was to observe and analyze changes in the weather as you approach the equator. Using data from OpenWeatherMap API to assemble a dataset on over 500 cities, the following visualizations demonstrate weather patterns. 
             </span><br/>
           </p>
-          <p  style="line-height:2">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Repellendus quia iusto porro quibusdam a doloribus dicta, impedit
-            vero praesentium error deserunt dolorem, harum laboriosam aspernatur
-            ea mollitia temporibus, dolore tempore suscipit! Laborum dicta, eos
-            perspiciatis dolor, cupiditate sit velit excepturi eveniet nihil
-            voluptate voluptatem aspernatur facere magnam aperiam necessitatibus
-            illum.
+          <p  style="line-height:2;font-size:125%;">
+            We can see that the weather does indeed follow certain patterns. Mainly, 
+            as we suspected that the close one approaches the equator, the warmer the weather. 
+            It does appear that the southern hemisphere is significantly warmer for the same 
+            time of year as the northern hemisphere. 
           </p>
         </div>
       </div>
@@ -132,7 +130,7 @@
       crossorigin="anonymous"
     ></script>
      <!--Start of Visualizations container-->
-       <div class="container-fluid">
+       <div class="imageNac-content">
         <div class="row justify-content-around py-5 px-4">
          <div class="col-lg-6 bg-white">
           <h2 class="text-info pt-6 ">Visualizations</h2>
@@ -141,28 +139,28 @@
           <div class="col-lg-6 col-md-3">
             <p>Max Temperature
             </p>
-              <a target="_blank" href="MaxTemperature.html">
-                  <img src="Resources/assets/images/Fig1.png" class="img-fluid" alt="MaxTemperature">
+              <a target="_blank" href="Visualizations/temperature.html">
+                  <img src="Resources/assets/images/Fig1.png" class="img-fluid" alt="Max Temperature">
               </a>
           </div>
           <div class="col-lg-6 col-md-3">
             <p>Humidity
             </p>
-              <a target="_blank" href="Humidity.html">
+              <a target="_blank" href="Visualizations/Humidity.html">
                   <img src="Resources/assets/images/Fig2.png" class="img-fluid" alt="Humidity">
               </a>
           </div>
           <div class="col-lg-6 col-md-3">
             <p>Cloudiness
             </p>
-              <a target="_blank" href="Cloudiness.html">
+              <a target="_blank" href="Visualizations/cloudiness.html">
                   <img src="Resources/assets/images/Fig3.png" class="img-fluid" alt="Cloudiness">
               </a>
           </div>
           <div class="col-lg-6 col-md-3">
             <p>Wind Speed
             </p>
-              <a target="_blank" href="WindSpeed.html">
+              <a target="_blank" href="Visualizations/wind.html">
                   <img src="Resources/assets/images/Fig4.png" class="img-fluid" alt="WindSpeed">
         
        <!--End of Summary of Latitude container-->
@@ -172,3 +170,13 @@
       </article>
   </body>
 </html>
+    <!-- Start of footer -->
+    <footer class="footer navbar-fixed-bottom">
+      <div class="two-toned-footer-color"></div>
+      <p class="text-muted text-muted-footer text-center">
+        &quot;Billionaires In The News&quot; &Verbar;  Amanda, Ashely, Emily, Jueting, Hana
+      </p>
+    </footer>
+    <!-- End of footer -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- <script src="????"></script> -->
